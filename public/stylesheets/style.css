@@ -1,12 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
-  padding: 50px;
+  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
-
+ 
+.background{
+  background: url(../images/cinema.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 60%;
+  margin-right: 5%;
+  margin-bottom: 20%;
+  gap: 50px;
+  
+}
+#titulo h1{
+  color: white;
+  font-size: 8em;
+  text-align: center;
+}
+#titulo a{
+  text-decoration: none;
+  font-size: 2em;
+  background-color: #fff;
+  color: #00B7FF;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
 .containerPelis{
     display: flex;
     justify-content: center;
