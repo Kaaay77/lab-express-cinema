@@ -1,0 +1,23 @@
+<div id="containerIndividual">
+
+<dic class="imgPeli">
+        <img src="{{response.image}}" alt="">
+</dic>
+
+<dic class="infoPeli">
+        <a href="/movies">Go back</a>
+        <h2>{{response.title}}</h2>
+        <h3>{{response.director}}</h3>
+        <b>Stars</b>
+        <ul>
+        {{#each response.stars}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+        <p>{{response.description}}</p>
+        <br>
+        {{#each response.showtimes}}
+        <i>{{this}} |</i>
+        {{/each}}
+</dic>
+</div>
